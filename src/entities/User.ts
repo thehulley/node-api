@@ -24,7 +24,7 @@ class User {
     @CreateDateColumn()
     created_at: Date
 
-    @UpdateDateColumn()
+    @UpdateDateColumn({onUpdate: 'CURRENT_TIMESTAMP'})
     updated_at: Date
 
     constructor() {
